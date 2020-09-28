@@ -22,3 +22,8 @@
     font-family: Livvic;
     src: url('../fonts/Livvic/Livvic-Regular.ttf');
 }
+
+@font-face {
+    font-family: Lobster;
+    src: url('../fonts/Lobster/Lobster-Regular.ttf');
+}

@@ -53,25 +53,12 @@ h3{
     text-shadow: black 1px 1px 1px;
 }
 
-button{
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    font-family: var(--Livvic);
-    cursor: pointer;
-}
-
-span{
-    font-family: var(--Abel);
-}
-
 img{
     width: 100%;
 }
 
 .container{
-    margin: 0 5vw;
+    margin: 0 7vw;
 }
 
 .text-gray{
@@ -165,7 +152,7 @@ p{
 main .site-title{
     background: url('../assets/bg7.jpg') center;
     background-size: cover;
-    height: 50vh;
+    height:65vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -183,17 +170,6 @@ main .site-title .site-background{
 .site-title h1, h3{
     margin: .3rem;
 
-}
-
-.pamax{
-    margin-bottom: 2rem;
-    color: var(--text-gray);
-    font-size: 3.5rem;
-}
-
-.btn{
-    margin: 1.8rem;
-    background: var(--sky);
 }
 
 .overlay{
@@ -217,31 +193,40 @@ main .site-title .site-background{
 }
 
 .info-text{
-    width: 30%;
+    width: 50%;
+    text-align: justify;
 }
 
 .profile{
-    width: 20%;
+    width: 40%;
+    padding-top: 2rem;
 }
 
 .work{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.work p{
-    width: 30%;
+.work-item{
+    width: 300px;
+    margin: 0 3rem;
+    position: relative;
 }
 
-.work-list{
-    font-size: 1.5rem;
-    font-family: var(--Anton);
+.work-hover{
+    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 10px solid rgb(103, 186, 235);
+    height: 100px;
+    top: 50%;
+    position: absolute;
 }
 
-.work-gallery{
-    width: 30%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.work-hover:hover{
+    top: 95%;
+    transition: .5s ease-in-out;
 }
 
 .gallery{
@@ -257,11 +242,17 @@ main .site-title .site-background{
 .footer{
     height: 100%;
     margin-top: 1rem;
-    background: var(--bg-color);
+    background: var(--sky);
     position: relative;
 }
 
 .rights{
-    justify-content: center;
     font-family: var(--Josefin);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+.text-gray{
+    padding-top: 2rem;
+    text-align: center;
 }
