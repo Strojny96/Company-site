@@ -38,7 +38,7 @@ ul{
 
 h1{
     font-family: var(--Lexend);
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-shadow: black 1px 1px 1px;
 }
 
@@ -149,10 +149,10 @@ p{
 }
 
 /*main*/
-main .site-title{
+.site-title{
     background: url('../assets/bg7.jpg') center;
     background-size: cover;
-    height:65vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -160,7 +160,7 @@ main .site-title{
     position: relative;
 }
 
-main .site-title .site-background{
+.site-background{
     text-align: center;
     color: var(--white);
     position: relative;
@@ -169,7 +169,6 @@ main .site-title .site-background{
 
 .site-title h1, h3{
     margin: .3rem;
-
 }
 
 .overlay{
@@ -180,6 +179,33 @@ main .site-title .site-background{
     height: 100%;
     background: var(--sky);
     opacity: .7;
+}
+
+.arrows{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    bottom: -100px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.arrows:hover{
+    transform: translateY(10px) scale(1.2);
+}
+
+.wrapper{
+    height: 80vh;
+}
+
+.title-wrapper{
+    height: 100vh;
+}
+
+.work-wrapper{
+    height: 70vh;
+    text-align: center;
+    margin: 2rem;
 }
 
 .wrapper h1{
@@ -197,45 +223,114 @@ main .site-title .site-background{
     text-align: justify;
 }
 
+.info-text h2{
+    margin-bottom: 1rem;
+}
+
 .profile{
     width: 40%;
     padding-top: 2rem;
 }
 
-.work{
+.offert{
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
-.work-item{
-    width: 300px;
-    margin: 0 3rem;
+.offert-card{
+    width: 400px;
+    margin: 0 1rem;
     position: relative;
+    cursor: pointer;
 }
 
-.work-hover{
-    text-align: center;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 10px solid rgb(103, 186, 235);
-    height: 100px;
-    top: 50%;
-    position: absolute;
+.offert-card img{
+    height: 250px;
+    border-radius: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.work-hover:hover{
-    top: 95%;
+.offert-card:hover .face2{
+    transform: translateY(-15px);
     transition: .5s ease-in-out;
 }
 
+.face1{
+    z-index: 1;
+    position: relative;
+}
+
+.face2{
+    padding: 1rem;
+    height: 100px;
+    background: rgba(130, 152, 156, 0.2);
+    transform: translateY(-95px);
+    border-bottom: 10px solid rgb(124, 212, 235);
+    border-radius: 1rem;
+    transition: .5s ease-in-out;
+    text-align: center;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.work{
+    width: 100%;
+    padding-top: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 2rem;
+}
+
+.number{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.number:hover .one{
+    border: 3px solid rgb(202, 61, 238);
+}
+
+.number:hover .another-one{
+    top: -2px;
+    right: -2px;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 1rem;
+    color: rgb(8, 56, 88);
+    font-size: 2rem;
+    text-shadow: 2px 1px 5px rgb(130, 152, 156);
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(138, 199, 240);
+}
+
+.another-one{
+    position: absolute;
+    z-index: -1;
+    top: -7px;
+    right: -7px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(13, 115, 184);
+    transition: .2s ease-in-out;
+}
+
 .gallery{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px;
+    grid-gap: 2rem;
 }
+
 
 /*Footer*/
 
@@ -248,9 +343,7 @@ main .site-title .site-background{
 
 .rights{
     font-family: var(--Josefin);
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
+    padding: 2rem 0 0 2rem;
 }
 .text-gray{
     padding-top: 2rem;
