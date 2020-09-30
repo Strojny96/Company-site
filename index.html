@@ -26,16 +26,16 @@
                         <a href="#">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">O firmie</a>
+                        <a href="#offert">Oferta</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Oferta</a>
+                        <a href="#realisation">Prace</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#realisation">Realizacje</a>
+                        <a href="#gallery">Galeria</a>
                     </li>
                     <li class="nav-link">
-                        <a class="link-bg form-button" href="#">Skontaktuj sie</a>
+                        <a class="link-bg form-button">Skontaktuj sie</a>
                     </li>
                 </ul>
             </div>
@@ -55,7 +55,7 @@
 
     <main>
         <section class="container">
-            <div class="wrapper">
+            <div class="wrapper" id="offert">
                 <h1>Oferta</h1>
                 <div class="offert">
                     <div class="offert-card">
@@ -95,24 +95,28 @@
                             <div class="another-one"></div>
                         </div>
                         <p>Pokrycia dachów</p>
+                        <div class="tooltip"><img src="./assets/bg1.jpg" alt=""></div>
                     </div>
                     <div class="number">
                         <div class="one">2
                             <div class="another-one"></div>
                         </div>
                         <p>Prace murarskie</p>
+                        <div class="tooltip"><img src="./assets/bg2.jpg" alt=""></div>
                     </div>
                     <div class="number">
                         <div class="one">3
                             <div class="another-one"></div>
                         </div>
                         <p>Wylewki fundamentów</p>
+                        <div class="tooltip"><img src="./assets/bg1.jpg" alt=""></div>
                     </div>
                     <div class="number">
                         <div class="one">4
                             <div class="another-one"></div>
                         </div>
                         <p>Konstrukcje drewniane</p>
+                        <div class="tooltip"><img src="./assets/bg4.jpg" alt=""></div>
                     </div>
                     <div class="number">
                         <div class="one">5
@@ -120,16 +124,18 @@
                             <div></div>
                         </div>
                         <p>Konstrukcje żelbetowe</p>
+                        <div class="tooltip"><img src="./assets/bg5.jpg" alt=""></div>
                     </div>
                     <div class="number">
                         <div class="one">6
                             <div class="another-one"></div>
                         </div>
                         <p>Roboty zbrojeniowe</p>
+                        <div class="tooltip"><img src="./assets/bg6.jpg" alt=""></div>
                     </div>
                 </div>
             </div>
-            <div class="gallery-wrapper wrapper">
+            <div class="gallery-wrapper wrapper" id="gallery">
                 <h1>Zrealizowane iwnwestycje</h1>
                 <div class="gallery">
                     <img src="./assets/bg1.jpg" alt="">
@@ -176,7 +182,7 @@
         </section>
         <div class="modal-bg">
             <div class="modal">
-                <form class="form" action="#">
+                <form class="form">
                     <h2>Napisz do nas</h2>
                     <label for="name">Imie:</label>
                     <input type="text">
