@@ -35,25 +35,25 @@
                         <a href="#realisation">Realizacje</a>
                     </li>
                     <li class="nav-link">
-                        <a class="link-bg" href="#">Skontaktuj sie</a>
+                        <a class="link-bg form-button" href="#">Skontaktuj sie</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <section class="title-wrapper">
+        <div class="open-title">
+            <div class="site-background">
+                <!--<h1 class="pamax">Pamax</h1>-->
+                <h1>Profesjonalne usługi budowlane</h1>
+                <h3>Zrealizuj z nami swoje plany</h3>
+            </div>
+            <div class="overlay"></div>
+            <img class="arrows" src="./assets/arrows.png" alt="arrows">
+        </div>
+    </section>
 
     <main>
-        <section class="title-wrapper">
-            <div class="open-title">
-                <div class="site-background">
-                    <!--<h1 class="pamax">Pamax</h1>-->
-                    <h1>Profesjonalne usługi budowlane</h1>
-                    <h3>Zrealizuj z nami swoje plany</h3>
-                </div>
-                <div class="overlay"></div>
-                <img class="arrows" src="./assets/arrows.png" alt="arrows">
-            </div>
-        </section>
         <section class="container">
             <div class="wrapper">
                 <h1>Oferta</h1>
@@ -170,10 +170,25 @@
                             gospodarczych i przemysłowych.
                         </p>
                     </div>
-                     <img class="profile" src="./assets/profile3.jpg" alt="profile">
+                     <!--<img class="profile" src="./assets/profile3.jpg" alt="profile">-->
                 </div>
             </div>
         </section>
+        <div class="modal-bg">
+            <div class="modal">
+                <form class="form" action="#">
+                    <h2>Napisz do nas</h2>
+                    <label for="name">Imie:</label>
+                    <input type="text">
+                    <label for="email">Email:</label>
+                    <input type="text">
+                    <label for="text">Wiadomość:</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                    <button class="form-submit">Submit</button>
+                </form>
+                <span class="modal-close">X</span>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
